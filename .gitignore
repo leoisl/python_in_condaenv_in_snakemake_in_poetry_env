@@ -1,0 +1,4 @@
+/.snakemake/
+/.venv/
+/.idea/
+__pycache__

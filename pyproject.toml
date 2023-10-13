@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test_snakemake"
+description = "test_snakemake"
+authors = ["test_snakemake"]
+version = "0.0.1"
+license = "MIT"
+readme = "README.md"
+packages = [{include = "test_snakemake"}]
+
+[tool.poetry.scripts]
+test_snakemake = 'test_snakemake.main:main'
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+snakemake = "^7.32.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
