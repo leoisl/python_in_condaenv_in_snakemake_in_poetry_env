@@ -7,8 +7,8 @@ This repo tries to reproduce a possible issue with snakemake, conda and python i
 1. Clone this repo;
 2. `poetry install`;
 3. Run the pipeline using the `python` wrapper: `poetry run test_snakemake`;
-4. Inspect the log file and see that the `.venv/bin/python` is getting precedence over the conda environment,
-e.g. this is what I get (see (this Snakefile)[Snakefile] for more details of what this pipeline is doing):
+4. Inspect the log file and see that the `.venv/bin/python` is getting precedence over the conda env `python`,
+e.g. this is what I get (see [this Snakefile](Snakefile) for more details of what this pipeline is doing):
 ```
 + which python
 /home/leandro/git/python_in_condaenv_in_snakemake_in_poetry_env/.venv/bin/python
